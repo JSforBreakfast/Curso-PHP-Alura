@@ -17,7 +17,7 @@ function depositar(array $conta, float $valorDepositar): array {
     if ($valorDepositar > 0) {
         $conta['saldo'] += $valorDepositar;
     } else {
-        exibeMensagem("Depósitos não podem ocasionar débito");
+        exibeMensagem("Depósitos não podem ocasionar débito.");
     }
 
     return $conta;
@@ -44,5 +44,5 @@ $contasCorrentes['987.456.123-45'] = sacar($contasCorrentes['987.456.123-45'], 6
 $contasCorrentes['123.456.789-25'] = depositar($contasCorrentes['123.456.789-25'],900);
 
 foreach ($contasCorrentes as $cpf => $conta){
-    exibeMensagem($cpf ." => ". $conta['titular'] . " seu saldo é de " . $conta['saldo'] . PHP_EOL);
+    exibeMensagem("$cpf {$conta['titular']} {$conta['saldo']}");
 }
