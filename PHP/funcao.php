@@ -1,5 +1,9 @@
 <?php
 
+//include "funcao2.php";
+//require "funcao2.php";
+//require_once "funcao2.php";
+
 function exibeMensagem($mensagem){
     echo $mensagem . PHP_EOL;
 }
@@ -22,6 +26,7 @@ function depositar(array $conta, float $valorDepositar): array {
 
     return $conta;
 }
+
 
 $contasCorrentes = [
     '123.456.789-25' => [
