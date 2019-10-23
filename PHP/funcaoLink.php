@@ -22,3 +22,10 @@ function depositar(array $conta, float $valorDepositar): array {
 
     return $conta;
 }
+
+//o '&' faz com que a variável seja usada como referência e não como valor. Ao contrário da variável como valor, a variável como referência não é uma mera cópia. Ou seja, modificações efetuadas na referência também serão efetivas na variável em si (declaração original da variável), enaquanto que na variável que é utilizada como valor, as modificações apenas são efetivas na cópia e não na variável em si.
+function titularMaiusculas(array &$conta)
+{
+    $conta['titular'] = strtoupper($conta['titular']);
+
+}
