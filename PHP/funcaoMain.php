@@ -21,18 +21,48 @@ $contasCorrentes = [
     ]
 ];
 
-//$contasCorrentes['321.456.987-78'] = sacar($contasCorrentes['321.456.987-78'], 500);
-$contasCorrentes['987.456.123-45'] = sacar($contasCorrentes['987.456.123-45'], 6000);
+$contasCorrentes['321.456.987-78'] = sacar($contasCorrentes['321.456.987-78'], 500);
+
+//$contasCorrentes['987.456.123-45'] = sacar($contasCorrentes['987.456.123-45'], 6000);
 
 $contasCorrentes['123.456.789-25'] = depositar($contasCorrentes['123.456.789-25'],900);
 
 unset($contasCorrentes['321.456.987-78']);
 
-
 titularMaiusculas($contasCorrentes['987.456.123-45']);
 
-foreach ($contasCorrentes as $cpf => $conta){
+//echo "<ul>";
+//foreach ($contasCorrentes as $cpf => $conta){
     //list('titular' => $titular, 'saldo' => $saldo) = $conta;
-    ['titular' => $titular, 'saldo' => $saldo] = $conta;
-    exibeMensagem("$cpf $titular  $saldo");
-}
+    //['titular' => $titular, 'saldo' => $saldo] = $conta;
+    //exibeMensagem("$cpf $titular  $saldo");
+    //exibeConta($conta);}
+//echo "<ul>";
+
+// video on how to use dl, dt, and dd tags: https://www.youtube.com/watch?v=y4QwbHBUjE4
+// link leadiing to stackoverflow that shows 
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banco</title>
+</head>
+<body>
+    <h1>Contas correntes</h1>
+    <dl>
+        <?php foreach ($contasCorrentes as $cpf => $conta){?>
+            <dt>
+                <h3><?php echo $conta['titular']; ?> - <?php echo $cpf; ?></h3>
+            </dt>
+            <dd> 
+                Saldo: <?php echo $conta['saldo'] ?>
+            </dd>
+        <?php } ?>
+    </dl>
+</body>
+</html>
