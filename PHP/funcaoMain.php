@@ -40,7 +40,6 @@ titularMaiusculas($contasCorrentes['987.456.123-45']);
 //echo "<ul>";
 
 // video on how to use dl, dt, and dd tags: https://www.youtube.com/watch?v=y4QwbHBUjE4
-// link leadiing to stackoverflow that shows 
 
 ?>
 
