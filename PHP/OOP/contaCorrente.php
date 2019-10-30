@@ -4,11 +4,11 @@ class contaCorrente{
     
     private $titular;
     
-    public $agencia;
+    private $agencia;
     
     private $numero;
     
-    private $saldo; 
+    private $saldo;
 
     public function __construct($titular,$agencia,$numero,$saldo){
             $this->titular = $titular;
@@ -25,6 +25,18 @@ class contaCorrente{
     public function depositar($valor){
         $this->saldo = $this->saldo + $valor;
         return $this;
+    }
+
+    public function getTitular(){
+        return $this->titular;
+    }
+
+    public function getSaldo(){
+        return $this->saldo;
+    }
+
+    public function setNumero($numero){
+        return $this->numero = $numero;
     }
 
 }
