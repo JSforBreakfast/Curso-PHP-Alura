@@ -15,13 +15,15 @@ $contaBruna = new contaCorrente("Bruna","4565","4563-4",7000,00);
 // $contaBruna->numero = "4563-4";
 // $contaBruna->saldo = "7000,00";
 
-var_dump($contaMateus);
+//var_dump($contaMateus);
 
-$contaMateus->sacar(499,99)
-->depositar(99);
+//$contaMateus->sacar(499,99)
+//->depositar(1002);
 
-var_dump($contaMateus);
+//var_dump($contaMateus);
 
-var_dump($contaBruna);
+//var_dump($contaBruna);
+
+echo $contaMateus->saldo; //teste. neste caso, como a propriedade $saldo está configurada como privada, este display vai dar erro. Para visualizar o saldo teríamos de configurar a propriedade $saldo como pública novamente no arquivo contaCorrente.php
 
 ?>
