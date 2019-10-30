@@ -24,6 +24,14 @@ $contaBruna = new contaCorrente("Bruna","4565","4563-4",7000,00);
 
 //var_dump($contaBruna);
 
-echo $contaMateus->saldo; //teste. neste caso, como a propriedade $saldo está configurada como privada, este display vai dar erro. Para visualizar o saldo teríamos de configurar a propriedade $saldo como pública novamente no arquivo contaCorrente.php
+//echo $contaMateus->saldo; //teste. neste caso, como a propriedade $saldo está configurada como privada, este display vai dar erro. Para visualizar o saldo teríamos de configurar a propriedade $saldo como pública novamente no arquivo contaCorrente.php
+
+echo $contaBruna->getSaldo();
+
+echo "<br>";
+
+echo $contaBruna->setNumero("0101010");
+
+
 
 ?>
