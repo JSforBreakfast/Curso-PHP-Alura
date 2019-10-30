@@ -16,6 +16,17 @@ class contaCorrente{
             $this->numero = $numero;
             $this->saldo = $saldo;
     }
+
+    public function sacar($valor){
+        $this->saldo = $this->saldo - $valor;
+        return $this;
+    }
+
+    public function depositar($valor){
+        $this->saldo = $this->saldo + $valor;
+        return $this;
+    }
+
 }
 
 ?>
