@@ -16,6 +16,12 @@ $contaBruna = new contaCorrente("Bruna","4565","4563-4",7000,00);
 // $contaBruna->saldo = "7000,00";
 
 var_dump($contaMateus);
+
+$contaMateus->sacar(499,99)
+->depositar(99);
+
+var_dump($contaMateus);
+
 var_dump($contaBruna);
 
 ?>
