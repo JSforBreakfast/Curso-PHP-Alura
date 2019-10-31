@@ -26,11 +26,17 @@ $contaBruna = new contaCorrente("Bruna","4565","4563-4",7000,00);
 
 //echo $contaMateus->saldo; //teste. neste caso, como a propriedade $saldo está configurada como privada, este display vai dar erro. Para visualizar o saldo teríamos de configurar a propriedade $saldo como pública novamente no arquivo contaCorrente.php
 
-echo $contaBruna->getSaldo();
+//echo $contaBruna->getSaldo();
+//
+//echo "<br>";
+//
+//echo $contaBruna->setNumero("0101010");
 
-echo "<br>";
+var_dump($contaMateus);
 
-echo $contaBruna->setNumero("0101010");
+$contaMateus-> titular = "Daniel"; // essa alteração não surtirá efeito porque o atributo continua privado 
+
+var_dump($contaMateus);
 
 
 
