@@ -8,4 +8,6 @@ Procedimento. função e método: http://www.serprogramador.com.br/artigos/topic
 
 Traversy Media OOP crash course: https://www.youtube.com/watch?v=dQxuYRNbL_M
 
+Object-oriented Programming in 7 minutes | Mosh: https://www.youtube.com/watch?v=pTB0EiLXUC8
+
 Curso em vídeo (história do PHP): https://www.youtube.com/watch?v=F7KzJ7e6EAc&list=PLHz_AreHm4dm4beCCCmW4xwpmLf6EHY9k
