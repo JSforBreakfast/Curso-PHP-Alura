@@ -39,14 +39,27 @@ class contaCorrente{
     //    return $this->numero = $numero;
     //}
     public function __get($atributo){
+        $this->protegeAtributo($atributo);
         return $this->$atributo;
     }
 
     public function __set($atributo, $valor){
+        $this->protegeAtributo($atributo);
+        $this->$atributo = $valor;
+    }
+
+    private function protegeAtributo($atributo){
         if ($atributo == "titular" || $atributo == "saldo"){
             return false;
         }
-        $this->$atributo = $valor;
+    }
+
+    private function formataSaldo(){
+        return "R$ ".number_format($this->saldo,2,",",".");
+    }
+
+    public function getSaldo(){
+        return $this->formataSaldo();
     }
 }
 
