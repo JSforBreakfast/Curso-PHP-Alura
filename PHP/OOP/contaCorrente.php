@@ -27,18 +27,27 @@ class contaCorrente{
         return $this;
     }
 
-    public function getTitular(){
-        return $this->titular;
+    //public function getTitular(){
+    //    return $this->titular;
+    //}
+
+    //public function getSaldo(){
+    //    return $this->saldo;
+    //}
+
+    //public function setNumero($numero){
+    //    return $this->numero = $numero;
+    //}
+    public function __get($atributo){
+        return $this->$atributo;
     }
 
-    public function getSaldo(){
-        return $this->saldo;
+    public function __set($atributo, $valor){
+        if ($atributo == "titular" || $atributo == "saldo"){
+            return false;
+        }
+        $this->$atributo = $valor;
     }
-
-    public function setNumero($numero){
-        return $this->numero = $numero;
-    }
-
 }
 
 ?>
