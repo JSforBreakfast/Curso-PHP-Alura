@@ -32,9 +32,11 @@ $contaBruna = new contaCorrente("Bruna","4565","4563-4",7000,00);
 //
 //echo $contaBruna->setNumero("0101010");
 
-var_dump($contaMateus);
+//var_dump($contaMateus);
 
-$contaMateus-> titular = "Daniel"; // essa alteração não surtirá efeito porque o atributo continua privado 
+//$contaMateus-> titular = "Daniel"; // essa alteração não surtirá efeito porque o atributo continua privado 
+
+echo $contaMateus->getSaldo(). PHP_EOL;
 
 var_dump($contaMateus);
 
