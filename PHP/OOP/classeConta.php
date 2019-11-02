@@ -36,10 +36,12 @@ $contaBruna = new contaCorrente("Bruna","4565","4563-4",7000,00);
 
 //$contaMateus-> titular = "Daniel"; // essa alteração não surtirá efeito porque o atributo continua privado 
 
+$contaMateus->transferir(50,$contaBruna);
+
 echo $contaMateus->getSaldo(). PHP_EOL;
 
 var_dump($contaMateus);
-
+var_dump($contaBruna);
 
 
 ?>
