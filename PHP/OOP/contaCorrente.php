@@ -39,11 +39,15 @@ class contaCorrente{
     //    return $this->numero = $numero;
     //}
 
-    public function transferir($valor, $conta){
+    public function transferir(float $valor, contaCorrente $contaCorrente){
+        //https://www.php.net/manual/en/function.is-numeric.php
+        if(!is_numeric($valor)){
+            echo "o valor não é um número";
+        }
 
         $this->sacar($valor);
 
-        $conta->depositar($valor);
+        $contaCorrente->depositar($valor);
 
         return $this;
     }
