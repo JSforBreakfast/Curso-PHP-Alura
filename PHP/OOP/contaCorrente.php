@@ -18,6 +18,7 @@ class contaCorrente{
     }
 
     public function sacar($valor){
+        validacao::verificaNumerico($valor);
         $this->saldo = $this->saldo - $valor;
         return $this;
     }
@@ -40,33 +41,24 @@ class contaCorrente{
     //}
 
     public function transferir(float $valor, contaCorrente $contaCorrente){
-        //https://www.php.net/manual/en/function.is-numeric.php
-        if(!is_numeric($valor)){
-            echo "o valor não é um número";
-        }
-
+        validacao::verificaNumerico($valor);
         $this->sacar($valor);
-
         $contaCorrente->depositar($valor);
 
         return $this;
     }
 
     public function __get($atributo){
-        $this->protegeAtributo($atributo);
+        validacao::protegeAtributo($atributo);
         return $this->$atributo;
     }
 
     public function __set($atributo, $valor){
-        $this->protegeAtributo($atributo);
+        validacao::protegeAtributo($atributo);
         $this->$atributo = $valor;
     }
 
-    private function protegeAtributo($atributo){
-        if ($atributo == "titular" || $atributo == "saldo"){
-            return false;
-        }
-    }
+    
 
     private function formataSaldo(){
         return "R$ ".number_format($this->saldo,2,",",".");
