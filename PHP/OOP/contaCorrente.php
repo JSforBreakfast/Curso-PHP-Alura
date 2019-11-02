@@ -38,6 +38,16 @@ class contaCorrente{
     //public function setNumero($numero){
     //    return $this->numero = $numero;
     //}
+
+    public function transferir($valor, $conta){
+
+        $this->sacar($valor);
+
+        $conta->depositar($valor);
+
+        return $this;
+    }
+
     public function __get($atributo){
         $this->protegeAtributo($atributo);
         return $this->$atributo;
