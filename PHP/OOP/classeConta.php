@@ -1,5 +1,6 @@
 <?php 
 
+require_once "validacaoConta.php";
 require_once "contaCorrente.php";
 //se a variável for um objeto, não será possível mostrar no browser usando echo. Dá erro. É preciso utilizar var_dump();
 $contaMateus = new contaCorrente("Mateus","4565","3553-4",5000,00);
@@ -36,7 +37,9 @@ $contaBruna = new contaCorrente("Bruna","4565","4563-4",7000,00);
 
 //$contaMateus-> titular = "Daniel"; // essa alteração não surtirá efeito porque o atributo continua privado 
 
-$contaMateus->transferir(50,$contaBruna);
+//$contaMateus->transferir(50,$contaBruna);
+
+$contaMateus->sacar(44);
 
 echo $contaMateus->getSaldo(). PHP_EOL;
 
