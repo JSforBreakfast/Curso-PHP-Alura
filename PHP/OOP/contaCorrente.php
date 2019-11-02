@@ -75,6 +75,11 @@ class contaCorrente{
     public function getSaldo(){
         return $this->formataSaldo();
     }
+    //tem que retornar o tipo string
+    //https://www.php.net/manual/en/language.oop5.magic.php
+    public function __toString(){
+        return "Titular da conta é: ".$this->titular. "<br/> Seu saldo atual é de ".$this->getSaldo();
+    }
 }
 
 ?>
