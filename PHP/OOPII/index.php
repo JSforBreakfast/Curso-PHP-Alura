@@ -1,16 +1,17 @@
 <?php
 
-ini_set("display_errors",1);
+//ini_set("display_errors",1);
 require_once "autoload.php";
 
-use classes\funcionarios\diretor;
-use classes\funcionarios\designer;
+use OOPII\classes\funcionarios\Diretor;
+use OOPII\classes\funcionarios\Designer;
 
-
-$diretor = new diretor();
-$designer = new designer();
+$diretor = new Diretor();
+$designer = new Designer();
 
 
 var_dump($diretor);
+var_dump($designer);
+
 
 ?>
