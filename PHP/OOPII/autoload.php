@@ -2,8 +2,8 @@
 function load($namespace){
     $namespace = str_replace("\\","/",$namespace);
     
-    $caminhoAbsoluto=__DIR__."/".$namespace.".php";
-    
+    $caminhoAbsoluto= __DIR__ . "/" . $namespace .".php";
+
     return include_once $caminhoAbsoluto;
 }
 
