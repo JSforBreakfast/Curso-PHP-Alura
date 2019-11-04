@@ -1,6 +1,16 @@
 <?php
+
+ini_set("display_errors",1);
 require_once "autoload.php";
 
-echo "teste";
+use classes\funcionarios\diretor;
+use classes\funcionarios\designer;
+
+
+$diretor = new diretor();
+$designer = new designer();
+
+
+var_dump($diretor);
 
 ?>
