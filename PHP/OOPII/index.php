@@ -3,8 +3,8 @@
 //ini_set("display_errors",1);
 require_once "autoload.php";
 
-use OOPII\classes\funcionarios\Diretor;
-use OOPII\classes\funcionarios\Designer;
+use OOPII\classes\abstratas\funcionarios\Diretor;
+use OOPII\classes\abstratas\funcionarios\Designer;
 
 $diretor = new Diretor();
 $designer = new Designer();
