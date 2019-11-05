@@ -1,15 +1,15 @@
-<?php
+//<?php
 
-namespace OOPII\classes\funcionarios;
+//namespace OOPII\classes\funcionarios;
 
-class Designer {
+//class Designer {
 
-    public $nome;
+//    public $nome;
 
-    public $cpf;
+//    public $cpf;
 
-    public $salario;
+//    public $salario;
 
-}
+//}
 
-?>
+//?>
