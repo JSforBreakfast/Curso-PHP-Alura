@@ -1,15 +1,15 @@
-<?php
+//<?php
 
-namespace OOPII\classes\funcionarios;
+//namespace OOPII\classes\funcionarios;
 
-class Diretor {
+//class Diretor {
 
-    public $nome;
+//    public $nome;
 
-    public $cpf;
+//    public $cpf;
 
-    public $salario;
+//    public $salario;
 
-}
+//}
 
-?>
+//?>
