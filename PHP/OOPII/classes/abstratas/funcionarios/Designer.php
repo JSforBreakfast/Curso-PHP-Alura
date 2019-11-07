@@ -1,21 +1,21 @@
-<?php
+//<?php
 
-namespace OOPII\classes\abstratas\funcionarios;
+//namespace OOPII\classes\abstratas\funcionarios;
 
-use OOPII\classes\abstratas\Funcionario;
+//use OOPII\classes\abstratas\Funcionario;
 
-class Designer extends Funcionario{
+//class Designer extends Funcionario{
 
-    public function getBonificacao(){
+  //  public function getBonificacao(){
 
-        return $this->salario * 0.5;
-    }
+  //      return $this->salario * 0.5;
+//    }
 
-    public function aumentoSalario(){
+//    public function aumentoSalario(){
 
-        $this->salario *= 1.3;
-    }
+//        $this->salario *= 1.3;
+//    }
      
-}
+//}
 
-?>
+//?>
