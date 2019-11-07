@@ -1,8 +1,8 @@
 <?php
 
 namespace OOPII\classes\abstratas;
-
-class Funcionario{
+//classes abstratas não podem ser instanciadas
+abstract class Funcionario{
 
     public $nome;
 
@@ -18,10 +18,7 @@ class Funcionario{
         $this->salario = $salario;
     }
 
-    public function getBonificacao(){
-
-        return $this->salario * 0.5;
-    }
+   abstract public function getBonificacao();
 
     public function aumentoSalario(){
 
