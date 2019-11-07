@@ -1,15 +1,17 @@
-//<?php
+<?php
 
-//namespace OOPII\classes\funcionarios;
+namespace OOPII\classes\abstratas\funcionarios;
 
-//class Diretor {
+use OOPII\classes\abstratas\Funcionario;
 
-//    public $nome;
+use OOPII\classes\abstratas\FuncionarioAutenticavel;
 
-//    public $cpf;
+class Diretor extends FuncionarioAutenticavel{
+    
+    public function getBonificacao(){
 
-//    public $salario;
+        return $this->salario * 0.5; 
+    }
+}
 
-//}
-
-//?>
+?>
