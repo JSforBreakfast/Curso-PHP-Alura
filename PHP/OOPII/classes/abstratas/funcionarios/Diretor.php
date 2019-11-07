@@ -1,16 +1,16 @@
-<?php
+//<?php
 
-namespace OOPII\classes\abstratas\funcionarios;
+//namespace OOPII\classes\abstratas\funcionarios;
 
-use OOPII\classes\abstratas\Funcionario;
-use OOPII\classes\abstratas\FuncionarioAutenticavel;
+//use OOPII\classes\abstratas\Funcionario;
+//use OOPII\classes\abstratas\FuncionarioAutenticavel;
 
-class Diretor extends FuncionarioAutenticavel{
+//class Diretor extends FuncionarioAutenticavel{
     
-    public function getBonificacao(){
+  //  public function getBonificacao(){
 
-        return $this->salario * 0.5; 
-    }
-}
+    //    return $this->salario * 0.5; 
+    //}
+//}
 
-?>
+//?>
