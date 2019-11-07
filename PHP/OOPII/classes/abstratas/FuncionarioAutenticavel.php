@@ -3,8 +3,8 @@ namespace OOPII\classes\abstratas;
 
 use OOPII\classes\abstratas\Funcionario;
 
-
-class FuncionarioAutenticavel extends Funcionario{
+//classes abstratas não podem ser instanciadas
+abstract class FuncionarioAutenticavel extends Funcionario{
 
     public $senha;
 
