@@ -29,7 +29,7 @@ class GerenciadorBonificacao implements Autenticavel{
     }
 
     public function AutentiqueAqui(FuncionarioAutenticavel $funcionario, $senha){
-
+        $this->autenticado = $funcionario->autenticar($senha);
+        }
     }
-}
 ?>
