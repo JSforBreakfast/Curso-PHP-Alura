@@ -10,10 +10,12 @@ abstract class FuncionarioAutenticavel extends Funcionario{
 
     public function autenticar($senha){
         //return ($senha == $this->senha)?true:false;
-        if($senha == $this->senha){
-            return true;
-        } 
+        //if($senha == $this->senha){
+          //  return true;
+        //} 
+            return $this->senha == $senha;
     }
+
 }
 
 ?>
