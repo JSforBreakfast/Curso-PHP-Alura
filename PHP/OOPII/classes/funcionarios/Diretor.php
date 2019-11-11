@@ -1,6 +1,6 @@
 <?php
 
-namespace OOPII\classes\abstratas\funcionarios;
+namespace OOPII\classes\funcionarios;
 
 use OOPII\classes\abstratas\Funcionario;
 
@@ -10,7 +10,7 @@ class Diretor extends FuncionarioAutenticavel{
     
     public function getBonificacao(){
 
-        return $this->salario * 0.5; 
+        return $this->salario * 0.3; 
     }
 }
 
