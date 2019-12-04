@@ -7,9 +7,10 @@ $correntistas_e_compras = [
      12,
     "Marilodia",
     "Luizanine",
-    "Luferaldo",
-    "12"
+    "Luferaldo"
     ];
+
+
 
 var_dump($correntistas_e_compras);
 
